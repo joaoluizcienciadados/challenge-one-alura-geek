@@ -1,0 +1,217 @@
+main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h1 {
+    display: flex;
+    font-family: "Press Start 2P";
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+p {
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.produtos-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background: var(--background-header-hover);
+    color: var(--branco);
+    width: 196px;
+    height: 258px;
+    border-radius: 10px;
+    gap: 10px;
+    border: 2px solid #000;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: -12px 9px 5px -4px rgba(0, 0, 0, 0.39);
+}
+
+.card:hover {
+    background-color: var(--background-header);
+    color: var(--branco);
+}
+
+
+.card p {
+    margin: 10px 10px;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    border: 2px;
+    gap: 8px;
+    margin-bottom: 5px;
+    border: 2px solid #000;
+}
+
+.meus-produtos h1,
+.produtos-container h1 {
+    font-size: var(--font-size-produtos);
+    font-family: "Press Start 2P";
+    font-weight: 700;
+}
+
+.meus-produtos {
+    align-items: center;
+    text-align: center;
+}
+
+.produtos {
+    display: grid;
+    width: 678px;
+    height: auto;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 0px;
+    padding: 20px;
+    overflow: auto;
+    gap: 25px;
+    padding-top: 40px;
+    box-shadow: -12px 9px 5px -4px rgba(0, 0, 0, 0.39);
+}
+
+.produtos img {
+    align-items: center;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card-container--value img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lixo {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.lixo:hover,
+.editar:hover {
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.button-group {
+    flex: 0; 
+}
+
+input {
+    color: var(--azul-escuro);
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    border-radius: 40px;
+    width: 400px;
+    height: 70px;
+    border: 2px solid var(--azul-escuro);
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+button {
+    color: var(--azul-escuro);
+    font-family: "IBM Plex Mono";
+    font-size: var(--font-size-botao);
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    width: 196px;
+    height: 60px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.input-group ::placeholder,
+.button-group ::placeholder,
+input {
+    justify-content: center;
+    color: var(--azul-escuro);
+}
+
+.adicionar-produtos {
+    padding-left: 50px;
+}
+
+.guardar {
+    background-color: var(--azul-escuro);
+    color: #fff;
+    border: 2px solid var(--azul-escuro);
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+
+.guardar:hover {
+    background-color: var(--branco);
+    color: var(--background-header-hover);
+    border: 2px solid var(--background-header-hover);
+}
+
+.limpar {
+    align-items: center;
+    background-color: var(--branco);
+    color: var(--background-header-hover);
+    border: 2px solid var(--azul-escuro);
+    cursor: pointer;
+    text-align: center;
+}
+
+#form-produto {
+    max-width: 1110px;
+    margin: 0 auto; 
+}
+
+#form-produto button {
+    align-items: center;
+    cursor: pointer;
+}

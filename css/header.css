@@ -1,0 +1,20 @@
+.header  {
+    background: var(--background-header);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 96px;  
+}
+
+header:hover {
+    background: var(--background-header-hover);
+    transition: all .4s;
+    cursor: pointer;
+}
+ 
+img {
+    max-width: 100%; 
+    display: block; 
+    margin: 20px auto; 
+ 
+}

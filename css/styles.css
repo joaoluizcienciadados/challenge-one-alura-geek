@@ -1,0 +1,110 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+:root {
+    --branco: #ffffff;
+    --vermelho: #e50b36;
+    --azul-escuro: #03318c;
+    --background-header: #5300C8;
+    --background-header-hover: #1903c6;
+
+    --font-size-produtos: 1.875rem;
+    --font-size-botao: 1.25rem; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Mono" sans-serif;
+}
+
+
+@media only screen and (max-width: 1110px) {
+
+    header,
+    footer {
+        width: auto;
+    }
+
+    .container {
+        display: flex;
+        width: auto;
+        align-items: center;
+        overflow: auto;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        text-align: center;
+        width: auto;
+    }
+
+    #form-produto {
+        padding-bottom: 10px;
+        width: Fixed (470px);
+        opacity: 0px;
+    }
+
+   input {
+        align-items: center;    
+        width: 470px; 
+    }
+
+    .guardar, .limpar {
+        align-items: center;
+        width: 234px;
+    }
+
+}
+
+@media (min-width: 430px) and (max-width: 827px) {
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100vh;
+        gap: 16px;
+        text-align: center;
+    }
+
+    #form-produto {
+        align-items: center;
+        display: block;
+        padding-bottom: 50px;
+        width: auto;
+        text-align: center;
+    }
+
+    input {
+        align-items: center;    
+        width: 440px; 
+    }
+
+    header,
+    footer {
+        width: 480px;
+        align-items: center;
+    }
+
+    .guardar, .limpar {
+        align-items: center;
+        width: 210px;
+    }
+}

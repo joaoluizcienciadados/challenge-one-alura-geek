@@ -1,0 +1,27 @@
+.rodape {
+    justify-content: center;
+    flex-direction: column;
+    background: var(--background-header-hover);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 232px;
+}
+
+footer p,
+a {
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    text-decoration: none;
+}
+ 
+.rodape__descrição {
+    font-family: "IBM Plex Mono" sans-serif;
+}
+
+.logo-github {
+    width: 2rem;
+}
